@@ -1,0 +1,186 @@
+.to-do-list {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #f2f2f2, #e0e0e0); /* Background gradient */
+  margin: 50px auto;
+  color: #4a148c;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+body {
+  background: linear-gradient(to right, #E94B3C, #6A0572);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.logo {
+  height: 25px;
+  width: auto;
+  margin-right: 30px;
+}
+
+.header-text {
+  font-size: 2.2em;
+  color: #4a148c;
+  font-weight: 600;
+}
+
+.controls, .search-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+input[type="text"], select, input[type="date"] {
+  font-size: 1rem;
+  padding: 10px;
+  border: 5px solid #000000;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 300px;
+}
+
+button {
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add-button {
+  background-color: #ff6600;
+  color: white;
+}
+
+.add-button:hover {
+  background-color: #cc5200;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.move-button {
+  background-color: #4a148c;
+  color: white;
+}
+
+.move-button:hover {
+  background-color: #310e63;
+}
+
+.edit-button {
+  background-color: #ff6600;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #cc5200;
+}
+
+.archive-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.archive-button:hover {
+  background-color: #cc5200;
+}
+
+.delete-all-button, .done-all-button {
+  background-color: #dc3545;
+  color: white;
+  margin: 5px;
+}
+
+.delete-all-button:hover, .done-all-button:hover {
+  background-color: #c82333;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-card {
+  background: linear-gradient(135deg, #4a148c, #ff6600);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-card.completed {
+  opacity: 0.7;
+}
+
+.task-card.high {
+  border-left: 5px solid #dc3545;
+}
+
+.task-card.medium {
+  border-left: 5px solid #ff6600;
+}
+
+.task-card.low {
+  border-left: 5px solid #6c757d;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.task-content input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.task-content .text {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.task-content .due-date, .task-content .priority {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.archived-tasks {
+  margin-top: 30px;
+}
+
+.archived-tasks .task-card {
+  background: #6c757d;
+}
